@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #3A4528; /* Olive green */
+            color: white;
+        }
+
+        .title {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin: 5px 0 20px;
+            color: #D4AF37; /* Gold */
+        }
+
+        /* Gallery grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flower-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .flower-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #3A4528;
+        }
+
+        .flower-name {
+            font-size: 20px;
+            margin: 15px 0 5px;
+            color: #3A4528;
+        }
+
+        .flower-description {
+            font-size: 14px;
+            color: #666;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Flower Gallery</h1>
+        <p class="subtitle">A collection of beautiful flowers and their descriptions</p>
+    </header>
+    <main class="gallery">
+        <div class="flower-card">
+            <img src="placeholder1.jpg" alt="Flower 1" class="flower-image">
+            <h2 class="flower-name">Flower 1</h2>
+            <p class="flower-description">This is a placeholder description for Flower 1. Replace this text with the actual description.</p>
+        </div>
+        <div class="flower-card">
+            <img src="placeholder2.jpg" alt="Flower 2" class="flower-image">
+            <h2 class="flower-name">Flower 2</h2>
+            <p class="flower-description">This is a placeholder description for Flower 2. Replace this text with the actual description.</p>
+        </div>
+        <div class="flower-card">
+            <img src="placeholder3.jpg" alt="Flower 3" class="flower-image">
+            <h2 class="flower-name">Flower 3</h2>
+            <p class="flower-description">This is a placeholder description for Flower 3. Replace this text with the actual description.</p>
+        </div>
+        <div class="flower-card">
+            <img src="placeholder4.jpg" alt="Flower 4" class="flower-image">
+            <h2 class="flower-name">Flower 4</h2>
+            <p class="flower-description">This is a placeholder description for Flower 4. Replace this text with the actual description.</p>
+        </div>
+    </main>
+</body>
+</html>
