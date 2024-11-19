@@ -7,122 +7,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   
   
-      <style>
-        {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
+        <style>
+        /* Reset and box-sizing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
             font-family: 'Playfair Display', serif;
-          
         }
-        
+
+        /* Navbar styles */
         .navbar {
-          background: #131313;
-          height: 80px
+            background: #131313;
+            height: 80px;
             display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 16px;
-          position: sticky;
-          top: 0;
-          z-index: 999;   
-        }
-        
-        .navbar__container {
-          display: flex;
-          justify-content: space-between;
-          height: 80px;
-            x-index; 1;
-          width: 100%;
-          max-width: 1300px;
-          margin: 0 auto;
-          padding: 0 50px;
-        }
-        
-        .navbar__menu {
-          display: flex;
+            justify-content: center;
             align-items: center;
-          list-style: none;
-          text-align: center;
+            font-size: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
         }
-        
-           .navbar__item {
-          height: 80px;
-        }
-        
-        .navbar__links {
-          color: #000;
+
+        .navbar__container {
             display: flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none; 
-          padding: 0, 10px;
-          height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 50px;
         }
-        
-        .navar__btn {
-          display: flex
-          justify-content: center;
-          align-items: center;
-          padding: 0, 10px;
-          width: 100%;
+
+        .navbar__menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center;
         }
-        
+
+        .navbar__item {
+            height: 80px;
+        }
+
+        .navbar__links {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 10px; /* Fixed incorrect comma */
+            height: 100%;
+        }
+
+        .navbar__links:hover {
+            color: #f77062;
+        }
+
+        .navbar__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .button {
-          display: flex;
-                    justify-content: center;
-          align-items: center;
-          text-decoration: none; 
-          padding: 10, 20px;
-          height: 100%;
-          width: 100%;
-          border: none;
-          outline: none;
-          bored-radius: 4px;
-          background: #f77062;
-          color: #fff;
+            text-decoration: none;
+            padding: 10px 20px; /* Fixed incorrect commas */
+            border: none;
+            border-radius: 4px;
+            background: #f77062;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
-        
-        
-  </style>
-  
-  <body>
-  <nav class="navbar"></nav>
-    <div class="navbar_container">
-      <div class="navbar_toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-      
-          <ul class="navbar_menu">
-            <li class="navbar_item">
-            <a href="/" class="navbar_links"> Home </a>
-            </li>
-            
-                <li class="navbar_item">
-                  <a href="/bouquet.html" class="navbar_links"> Bouquet Collection </a>
-            </li>
-            
-                <li class="navbar_item">
-            <a href="/" class="navbar_links"> Plant Collection </a>
-            </li>
-            
-                <li class="navbar_item">
-            <a href="/" class="navbar_links"> About </a>
-            </li>
-            
-                <li class="navbar_btn">
-            <a href="/" class="button"> Contact Us </a>
-            </li>
-            
-      </ul>
-    </div>
+
+        .button:hover {
+            background: #4837ff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="bouquet.html" class="navbar__links">Bouquet Collection</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="plants.html" class="navbar__links">Plant Collection</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="contact.html" class="button">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </body>
-  
+</body>
+</html>
   
   
     <style>
