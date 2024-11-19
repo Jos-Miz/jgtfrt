@@ -7,84 +7,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   
   
-        <style>
-        /* Reset and box-sizing */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-        }
+<style>
+    <style>
+  
+    body {
+        margin: 0;
+        font-family: 'Playfair Display', serif;    
+  }
 
-        /* Navbar styles */
-        .navbar {
-            background: #3A4528;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
+    .navbar {
+        background-color: #333; /* Set background color for the navbar */
+        display: flex;
+        justify-content: center; /* Center the navigation items */
+        padding: 10px 0;
+    }
 
-        .navbar__menu {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            text-align: center;
-        }
+    .navbar {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 20;
+        display: flex;
+        gap: 60px; /* Space out each section */
+    }
 
-        .navbar__links {
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            padding: 0 10px; /* Fixed incorrect comma */
-            height: 100%;
-        }
+    .navbar a {
+        color: white; /* Set the text color to white */
+        text-decoration: none; /* Remove underlines */
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-        .navbar__links:hover {
-            color: #f77062;
-        }
+    .navbar a:hover {
+        color: lightgreen; /* Add hover effect for better interactivity */
+        text-decoration: underline;
+    }
+  
+</style>
 
   
-          
-          
-          
-    </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="bouquet.html" class="navbar__links">Bouquet Collection</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="plants.html" class="navbar__links">Plant Collection</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="about.html" class="navbar__links">About</a>
-                </li>
-              <li class="navbar__item">
-                <a href="contact.html" class="navbar__links"> Contact Us </a>
-                </li>
-            </ul>
-        </div>
+          
+            <li><a href="home.html"> Home</a></li>
+          
+            <li><a href="index.html"> Bouquet Collection</a></li>
+          
+            <li><a href="plants.html"> Plant Collection</a></li>
+          
+            <li><a href="about.html"> About</a></li>
+          
+            <li><a href="contact.html"> Contact Us</a></li>
+          
+        </ul>
     </nav>
+  
 </body>
-</html>
   
   
     <style>
@@ -154,11 +132,13 @@
             padding: 0 10px;
         }
     </style>
+
+
 </head>
 <body>
   
     <header>
-        <h1 class="title">Flower Gallery</h1>
+        <h1 class="title">Bouquet Gallery</h1>
         <p class="subtitle"> A collection of beautiful flowers and their descriptions </p>
     </header>
   
